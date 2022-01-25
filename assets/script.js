@@ -49,7 +49,7 @@ function displayWeather(data) {
 }
 
 function getWeather() {
-    const apiKey = "13aee28c8aa564f699d833de5603c365"
+    
     const weatherUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=33.4&lon=-94.04&units=imperial&appid=${apiKey}`;
 
     fetch(weatherUrl)
