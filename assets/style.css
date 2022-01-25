@@ -1,0 +1,17 @@
+.weatherCard {
+    border: black solid .01rem;
+    width: 18%;
+    padding: .5rem;
+}
+
+.d-f {
+    display: flex;
+}
+
+.jc-sa {
+    justify-content: space-around;
+}
+
+.ta-c {
+    text-align: center;
+}
