@@ -1,17 +1,86 @@
+.aside {
+    border-right: lightgray solid .01rem;
+    height: 100vh;
+}
+
+.currentWeather {
+    border: black solid .01rem;
+    background-color: rgba(45, 192, 218, 0.849);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.currentDiv{
+    width: 50%;
+    text-align: left;
+    margin: 0;
+    padding-left: 0;
+}
+
 .weatherCard {
     border: black solid .01rem;
     width: 18%;
     padding: .5rem;
+    background-color: rgba(57, 57, 228, 0.836);
+    z-index: 1;
+}
+
+.bg-b {
+    background-color: rgb(48, 45, 196);
+}
+
+.bg-g {
+    background-color: green;
+}
+
+.bg-y {
+    background-color: yellow;
+}
+
+.bg-r {
+    background-color: red;
 }
 
 .d-f {
     display: flex;
 }
 
+.fd-c {
+    flex-direction: column;
+}
+
 .jc-sa {
     justify-content: space-around;
 }
 
+.m-1 {
+    margin: 2rem;
+}
+
+.mt-1 {
+  margin-top: 2rem;
+}
+
+.p-0 {
+    padding-left: 0;
+}
+
+
+
+.p-2 {
+    padding: 2rem;
+}
+
 .ta-c {
     text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.v-h {
+    visibility: hidden;
 }
