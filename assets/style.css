@@ -1,15 +1,40 @@
+/* object */
+/* search menu */
 .aside {
     border-right: lightgray solid .01rem;
     height: 100vh;
+    min-width: 10rem;
+    width: 25%;
 }
 
+/* city button in search menu */
+.aside-btn {
+    width: 100%;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(152, 206, 233);
+    font-size: large;
+}
+
+.aside-btn:hover {
+    background-color: rgb(127, 167, 187);
+}
+
+.aside-btn:active {
+    background-color: rgb(61, 97, 116);;
+}
+
+/* current weather display */
 .currentWeather {
     border: black solid .01rem;
-    background-color: rgba(45, 192, 218, 0.849);
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding: 1rem;
+    border-radius: .5rem 3rem;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    margin: 2rem;
+    padding: 1.5rem;
     z-index: 1;
+    min-width: 7rem;
 }
 
 .currentDiv{
@@ -19,20 +44,44 @@
     padding-left: 0;
 }
 
+/* future weather display */
 .weatherCard {
     border: black solid .01rem;
-    width: 18%;
+    border-radius: 1rem;
     padding: .5rem;
-    background-color: rgba(57, 57, 228, 0.836);
+    background-color: rgba(255, 255, 255, .15);  
     z-index: 1;
+    margin: 1rem;
+    min-width: 12rem;
+    max-width: 12rem;
+}
+
+/* atomic */
+
+.a-c {
+    justify-content: center;
+}
+
+.bg-img {
+    background-image: url("./cloud_background.png");
 }
 
 .bg-b {
-    background-color: rgb(48, 45, 196);
+    background-color: rgb(0,89,134);
+}
+
+.bg-db {
+    background-color: rgb(127, 167, 187);
 }
 
 .bg-g {
     background-color: green;
+}
+
+.font {
+    font-family: 'kavoon';
+    color: white;
+    -webkit-text-stroke: .01rem black;
 }
 
 .bg-y {
@@ -51,6 +100,10 @@
     flex-direction: column;
 }
 
+.fw-w {
+    flex-wrap: wrap;
+}
+
 .jc-sa {
     justify-content: space-around;
 }
@@ -67,8 +120,9 @@
     padding-left: 0;
 }
 
-
-
+.pd-1 {
+    padding: 1.25rem;
+}
 .p-2 {
     padding: 2rem;
 }
@@ -83,4 +137,28 @@
 
 .v-h {
     visibility: hidden;
+}
+
+/* media query */
+
+@media (max-width: 500px) {
+    
+    .bg-in-sm {
+        background-image: none;
+    }
+
+    .fd-c-sm {
+        flex-direction: column;
+    }
+
+    .w-80-sm {
+        width: 80%;
+    }
+
+    .w-100-sm {
+        width: 100%;
+    }
+    .h-a-sm{
+        height: auto;
+    }
 }
